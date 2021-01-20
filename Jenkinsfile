@@ -8,8 +8,7 @@ pipeline {
         }
         stage("test") {
             steps {
-                javac Hello.java
-                java Hello
+                echo "Testing an application..."
             }
         }
         stage("deploy") {
